@@ -1,0 +1,11 @@
+{
+  "redhat.telemetry.enabled": true,
+  "workbench.colorTheme": "dark-jetbrains-color-theme",
+  "editor.fontSize": 16,
+  "editor.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.fontSize": 16,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": "active",
+  "editor.guides.highlightActiveBracketPair": true
+}
