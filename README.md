@@ -4,14 +4,18 @@ Create symlink to use:
 
 linux
 ```shell
-mv ~/.config/VSCodium/User/settings.json \
-   ~/.config/VSCodium/User/settings.json.bak
-ln -s ~/CODE/codium-config/settings.json ~/.config/VSCodium/User/settings.json
+mv "$HOME/.config/VSCodium/User/settings.json" \
+   "$HOME/.config/VSCodium/User/settings.json.bak"
+
+ln -s "$(pwd)/settings.json" \
+   "$HOME/.config/VSCodium/User/settings.json"
 ```
 
 osx
 ```shell
-mv "~/Library/Application Support/VSCodium/User/settings.json" \
-   "~/Library/Application Support/VSCodium/User/settings.json.bak"
-ln -s ~/CODE/codium-config/settings.json "~/Library/Application Support/VSCodium/User/settings.json"
+mv "$HOME/Library/Application Support/VSCodium/User/settings.json" \
+   "$HOME/Library/Application Support/VSCodium/User/settings.json.bak"
+
+ln -s "$(pwd)/settings.json" \
+   "$HOME/Library/Application Support/VSCodium/User/settings.json"
 ```
