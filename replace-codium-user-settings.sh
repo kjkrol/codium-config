@@ -9,7 +9,7 @@ else
     TARGET="$HOME/.config/VSCodium/User/settings.json"
 fi
 
-# backup jeśli istnieje plik
+# backup jeśli istnieje zwykły plik
 if [[ -e "$TARGET" && ! -L "$TARGET" ]]; then
     mv "$TARGET" "$TARGET.bak"
 fi
@@ -22,3 +22,11 @@ fi
 ln -s "$SOURCE" "$TARGET"
 echo "Symlink created: $TARGET -> $SOURCE"
 
+# zainstaluj rozszerzenia
+if [[ -f "$(pwd)/extensions.txt" ]]; then
+    echo "Installing extensions..."
+    xargs -n1 codium --install-extension < "$(pwd)/extensions.txt"
+    echo "Extensions installed."
+else
+    echo "No extensions.txt found, skipping extensions installation."
+fi

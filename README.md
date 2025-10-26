@@ -1,21 +1,18 @@
-# kjkrol VSCodium configuration
+# VSCodium User Configuration
 
-Create symlink to use:
+Personal configuration for [VSCodium](https://vscodium.com/).
 
-linux
-```shell
-mv "$HOME/.config/VSCodium/User/settings.json" \
-   "$HOME/.config/VSCodium/User/settings.json.bak"
+This repository contains:
+- `settings.json` – editor settings (theme, fonts, guides, etc.)
+- `extensions.txt` – list of installed extensions
+- `replace-codium-user-settings.sh` – script that symlinks `settings.json` and installs extensions
+- `Makefile` – helper tasks for export/import of extensions and setup
 
-ln -s "$(pwd)/settings.json" \
-   "$HOME/.config/VSCodium/User/settings.json"
-```
+## Usage
 
-osx
-```shell
-mv "$HOME/Library/Application Support/VSCodium/User/settings.json" \
-   "$HOME/Library/Application Support/VSCodium/User/settings.json.bak"
+Clone the repository and run setup:
 
-ln -s "$(pwd)/settings.json" \
-   "$HOME/Library/Application Support/VSCodium/User/settings.json"
-```
+```bash
+git clone https://github.com/kjkrol/codium-config.git
+cd codium-config
+make setup
