@@ -2,10 +2,8 @@ christian-kohler.path-intellisense
 ckolkman.vscode-postgres
 fogio.jetbrains-color-theme
 golang.go
-gruntfuggly.scoper
 ionutvmi.path-autocomplete
 k--kato.intellij-idea-keybindings
-leodevbro.blockman
-mvllow.rose-pine
+openai.chatgpt
 redhat.vscode-yaml
 yzhang.markdown-all-in-one
